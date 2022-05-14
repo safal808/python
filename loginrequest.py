@@ -1,5 +1,6 @@
-#This tool can send multiple login requests to *Phishing websites*, which makes them harder to distinguish between real info and generated ones.
-
+"""This tool can send multiple login requests to *Phishing websites*, which makes them harder to distinguish between real info and generated ones.
+Inspired from- Engineer_man
+"""
 import requests,os,random,string,json
 chars = string.ascii_letters + string.digits + '!@#$%^&*()'
 random.seed = (os.urandom(1024))
