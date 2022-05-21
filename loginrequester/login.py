@@ -3,7 +3,6 @@ chars = string.ascii_letters + string.digits + '!@#$%^&*()'
 random.seed = (os.urandom(1024))
 url = ''##REQUEST URL
 names = json.loads(open('namelist.json').read())
-
 for name in names:
 	name_extra = ''.join(random.choice(string.digits))
 
