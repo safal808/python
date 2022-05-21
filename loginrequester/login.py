@@ -8,7 +8,7 @@ for name in names:
 	username = name.lower() + name_extra + '@gmail.com'
 	password = ''.join(random.choice(chars) for i in range(10))
    	requests.post(url, allow_redirects=False, data={
-		###FORM DATA PART
+		###DATA SENT FROM USER TO SERVER
 		'': username,
 		'': password
 	})
